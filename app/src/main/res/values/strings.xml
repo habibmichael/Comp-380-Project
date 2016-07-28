@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Comp380</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="confirm_password_hint">Confirm Password</string>
+    <string name="login_button">Log In</string>
+    <string name="signup_button">Sign Up</string>
+
+
 </resources>

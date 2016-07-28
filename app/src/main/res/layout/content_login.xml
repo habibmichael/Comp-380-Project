@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.l2l.androided.mh122354.comp380.LoginActivity"
+    tools:showIn="@layout/activity_login"
+    android:orientation="vertical"
+    android:padding="@dimen/button_padding">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameEditText"
+        android:layout_gravity="center_horizontal"
+        android:inputType="none"
+        android:hint="@string/username_hint"
+        android:textSize="25sp"
+        android:layout_margin="@dimen/activity_vertical_margin" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/passwordEditText"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/password_hint"
+        android:textSize="25sp"
+        android:layout_margin="@dimen/activity_vertical_margin" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup_button"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/view_margin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:id="@+id/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/material_grey_300"
+        android:textSize="20sp"
+        android:elevation="@dimen/button_elevation"
+        android:textColor="@color/primary_material_dark"
+        android:padding="@dimen/button_padding"
+        android:layout_margin="@dimen/activity_vertical_margin" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/confirmEditText"
+        android:layout_gravity="center_horizontal"
+        android:textSize="25sp"
+        android:hint="@string/confirm_password_hint"
+        android:visibility="invisible" />
+
+</LinearLayout>

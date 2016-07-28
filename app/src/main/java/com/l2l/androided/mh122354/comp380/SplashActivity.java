@@ -47,11 +47,12 @@ public class SplashActivity extends AppCompatActivity {
                 //When fade in ends start fade out animation & transition to log in screen
                 splashImage.startAnimation(fadeOutAnimation);
                 Intent i = new Intent( getBaseContext(),LoginActivity.class);
+                startActivity(i);
         }
 
         @Override
         public void onAnimationRepeat(Animation animation) {
 
         }
-    }
+    };
 }
