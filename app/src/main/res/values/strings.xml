@@ -4,8 +4,10 @@
     <string name="username_hint">Username</string>
     <string name="password_hint">Password</string>
     <string name="confirm_password_hint">Confirm Password</string>
-    <string name="login_button">Log In</string>
-    <string name="signup_button">Sign Up</string>
+    <string name="login">Log In</string>
+    <string name="signup">Sign Up</string>
+    <string name="emptySignup">All fields must be filled to sign up</string>
+    <string name="nonMatchPassword">Passwords do not match</string>
 
 
 </resources>

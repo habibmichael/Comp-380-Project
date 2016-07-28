@@ -32,38 +32,40 @@
         android:textSize="25sp"
         android:layout_margin="@dimen/activity_vertical_margin" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/signup_button"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
-        android:textSize="15sp"
-        android:textColor="@color/colorPrimary"
-        android:layout_margin="@dimen/view_margin" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_button"
-        android:id="@+id/loginButton"
-        android:layout_gravity="center_horizontal"
-        android:background="@color/material_grey_300"
-        android:textSize="20sp"
-        android:elevation="@dimen/button_elevation"
-        android:textColor="@color/primary_material_dark"
-        android:padding="@dimen/button_padding"
-        android:layout_margin="@dimen/activity_vertical_margin" />
-
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/confirmEditText"
-        android:layout_gravity="center_horizontal"
         android:textSize="25sp"
         android:hint="@string/confirm_password_hint"
         android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/signup"
+        android:id="@+id/signupLoginTextView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="15sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_margin="@dimen/view_margin"
+        android:onClick="signUpLoginTextClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:id="@+id/loginSignupButton"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/material_grey_300"
+        android:textSize="20sp"
+        android:elevation="@dimen/button_elevation"
+        android:textColor="@color/primary_material_dark"
+        android:padding="@dimen/button_padding"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:onClick="signUpLoginButtonClick" />
+
 
 </LinearLayout>
