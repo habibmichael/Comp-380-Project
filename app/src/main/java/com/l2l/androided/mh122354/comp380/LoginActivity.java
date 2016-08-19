@@ -20,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     boolean isLoginPage= true;
     EditText passwordEditText;
     EditText usernameEditText;
+    boolean isValid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,17 +67,21 @@ public class LoginActivity extends AppCompatActivity {
 
             EditText[] editTextEntries = {usernameEditText,passwordEditText,
                     confirmEditText};
-            validateSignUp(editTextEntries);
+            if(validateSignUp(editTextEntries)){
+                Intent i = new Intent(getBaseContext(),SelectFuncActivity.class);
+                startActivity(i);
+            }
     }
 
     }
 
-    public void validateSignUp(EditText[] entries){
+    public boolean validateSignUp(EditText[] entries){
 
 
 
         if(entries[0].getText().toString().equals("") || entries[1].getText().toString().equals("")
                 || entries[2].getText().toString().equals("")){
+            isValid=false;
 
 
             for (EditText entry : entries) {
@@ -84,14 +89,15 @@ public class LoginActivity extends AppCompatActivity {
             }
             Toast.makeText(getBaseContext(), R.string.emptySignup, Toast.LENGTH_LONG).show();
 
+
         } else if ( !(entries[1].getText().toString().equals(entries[2].getText().toString()))){
 
-
+                isValid=false;
             Toast.makeText(getBaseContext(),R.string.nonMatchPassword, Toast.LENGTH_LONG).show();
             entries[1].setText("");
             entries[2].setText("");
             }
-
+            return true;
         }
 
     public void cameraTest(View view){
